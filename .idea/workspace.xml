@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf457cc5-67e3-4917-b7e5-020992eaa090" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -31,7 +32,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\MyProjects\AudioBooks_Mockup" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -43,7 +50,9 @@
       <updated>1608576758290</updated>
       <workItem from="1608576762883" duration="6125000" />
       <workItem from="1608590529321" duration="8273000" />
-      <workItem from="1608650110773" duration="2231000" />
+      <workItem from="1608650110773" duration="8918000" />
+      <workItem from="1608749330933" duration="12144000" />
+      <workItem from="1608995655250" duration="12032000" />
     </task>
     <servers />
   </component>

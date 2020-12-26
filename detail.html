@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- Additional style -->
+    <style>
+
+        .summary {
+            height: 600px;
+        }
+
+        .book_chapter_list {
+            height: 550px;
+            min-width: 350px;
+            text-align: left;
+        }
+
+        .image_player {
+            min-width: 350px;
+        }
+
+    </style>
+
+    <title>YouBookReader</title>
+</head>
+
+<body>
+
+<header>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+        <a class="navbar-brand" href="index.html"><i class="fa fa-book"></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">History</a>
+                </li>
+                <!--<li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>-->
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <!---------------- Start Title & author ------------------------------------>
+    <section class="py-1 mt-5 text-center container">
+        <div class="row mt-3 border-bottom">
+            <div class="col mx-auto">
+                <h1 class="fw-light">A Midsummer Night's Dreamn</h1>
+                <p class="lead text-muted">By: <a href="https://en.wikipedia.org/wiki/William_Shakespeare"
+                                                  class="btn-link mx-1">William Shakespeare</a>(1564-1616)</p>
+            </div>
+        </div>
+    </section>
+    <!---------------- End Title & author ------------------------------------>
+
+    <!---------------- Start Cover image, chapter list, playing controls, summary ------------------------------------>
+    <div class="bg-white">
+        <div class="container my-3">
+
+            <div class="row row-cols-3 p-3">
+
+                <!-- Put ads later - left -->
+                <div class="col-1">
+                    <div class="row">
+
+                    </div>
+                </div>
+
+                <!---------- cover image, chapter list, playing controls, summary ----------------->
+                <div class="col-10">
+                    <div class="row row-cols-2 border bg-white p-3">
+                        <div class="col text-center image_player">
+                            <!-------- image ----------->
+                            <div class="row justify-content-center">
+                                <img width="75%" height="75%" src="img/blank_book_cover.jpg" class="shadow rounded-3"/>
+                            </div>
+
+                            <!---- Progress bar, playing controls, rating, duration ---->
+                            <div class="row mt-3 justify-content-center">
+                                <span class="mr-2">Rating:</span>
+                                <span><i class="text-warning fa fa-star"></i></span>
+                                <span><i class="text-warning fa fa-star"></i></span>
+                                <span><i class="text-warning fa fa-star"></i></span>
+                                <span><i class="text-warning fa fa-star"></i></span>
+                                <span><i class="text-warning fa fa-star"></i></span>
+                            </div>
+                            <div class="row justify-content-center">
+                                <span class="mr-2">Duration:</span>
+                                <span>1h 10 mins</span>
+                            </div>
+
+                            <div class="row row-cols-1 mx-1 my-3 justify-content-center">
+                                <div class="progress my-2">
+                                    <div class="progress-bar w-25" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+
+                            <div class="row btn-group justify-content-center">
+                                <button type="button" class="btn btn-link btn-lg"><i class="fa fa-backward"></i></button>
+                                <button type="button" class="btn btn-link btn-lg"><i class="fa fa-play"></i></button>
+                                <button type="button" class="btn btn-link btn-lg"><i class="fa fa-pause"></i></button>
+                                <button type="button" class="btn btn-link btn-lg"><i class="fa fa-forward"></i></button>
+                                <button type="button" class="btn btn-link btn-lg"><i class="fa fa-volume-off"></i></button>
+                                <button type="button" class="btn btn-link btn-lg"><i class="fa fa-volume-down"></i></button>
+                                <button type="button" class="btn btn-link btn-lg"><i class="fa fa-volume-up"></i></button>
+                            </div>
+
+                        </div>
+
+                        <div class="col border overflow-auto book_chapter_list">
+                            <p class="lead border-bottom"><i class="text-primary fa fa-play"></i><button type="button" class="btn btn-link btn-lg">Chapter 1</button></p>
+                            <p class="lead border-bottom"><i class="text-primary fa fa-play"></i><button type="button" class="btn btn-link btn-lg">Chapter 2</button></p>
+                            <p class="lead border-bottom"><i class="text-primary fa fa-play"></i><button type="button" class="btn btn-link btn-lg">Chapter 3</button></p>
+                            <p class="lead border-bottom"><i class="text-primary fa fa-play"></i><button type="button" class="btn btn-link btn-lg">Chapter 4</button></p>
+                            <p class="lead border-bottom"><i class="text-primary fa fa-play"></i><button type="button" class="btn btn-link btn-lg">Chapter 5</button></p>
+                            <p class="lead border-bottom"><i class="text-primary fa fa-play"></i><button type="button" class="btn btn-link btn-lg">Chapter 6</button></p>
+                            <p class="lead border-bottom"><i class="text-primary fa fa-play"></i><button type="button" class="btn btn-link btn-lg">Chapter 7</button></p>
+                            <p class="lead border-bottom"><i class="text-primary fa fa-play"></i><button type="button" class="btn btn-link btn-lg">Chapter 8</button></p>
+                            <p class="lead border-bottom"><i class="text-primary fa fa-play"></i><button type="button" class="btn btn-link btn-lg">Chapter 9</button></p>
+                            <p class="lead border-bottom"><i class="text-primary fa fa-play"></i><button type="button" class="btn btn-link btn-lg">Chapter 10</button></p>
+                            <p class="lead border-bottom"><i class="text-primary fa fa-play"></i><button type="button" class="btn btn-link btn-lg">Chapter 11</button></p>
+                            <p class="lead border-bottom"><i class="text-primary fa fa-play"></i><button type="button" class="btn btn-link btn-lg">Chapter 12</button></p>
+                        </div>
+
+                    </div>
+
+                    <!------- Summary ---------->
+                    <div class="row row-cols-1 border bg-white p-3 my-3">
+                        <div class="row row-cols-1 mx-1 bg-white overflow-auto summary">
+                            <p>
+                                Summer nights, romance, music, comedy, pairs of lovers who have yet to confess their
+                                feelings to each other, comedy and more than a touch of magic are all woven into one
+                                of Shakespeare's most delightful and ethereal creations – A Midsummer Night's Dream.
+                            </p>
+                            <p>
+                                The plot is as light and enchanting as the settings themselves. The Duke of Athens
+                                is busy with preparations for his forthcoming wedding to Hippolyta the Amazonian
+                                Queen. In the midst of this, Egeus, an Athenian aristocrat marches in, flanked by
+                                his lovely daughter Hermia and her two suitors, Lysander and Demetrius. Egeus wants
+                                Hermia to marry Demetrius, but she has given her heart to Lysander. The Duke rules
+                                that Hermia must obey her father or else face banishment or execution. Lysander and
+                                Hermia make plans to elope, but here the plot takes an interesting twist. Helena, a
+                                former sweetheart of Demetrius, learns about the lovers' plan and decides that the
+                                way to get back into Demetrius' good books is to tell him about this! The two pairs
+                                land up at the same time in a forest.
+                            </p>
+                            <p>
+                                This enchanted wood near Athens is where Oberon, King of Fairies rules. His queen,
+                                the imperious and very beautiful Titania and he have recently fallen out over the
+                                ownership of a little boy from India who was given as a gift to Titania. The wily
+                                Oberon sends his merry messenger, Puck, to cast a naughty spell on Titania. She
+                                promptly falls in love with Bottom the Weaver, one of a group of villagers who have
+                                come there to rehearse their act for the coming festivities. Bottom, courtesy the
+                                impish Puck, has been transformed into a ridiculous, donkey headed creature. And so
+                                winds on the captivating course of events in A Midsummer Night's Dream!
+                            </p>
+                            <p>
+                                This enchanted wood near Athens is where Oberon, King of Fairies rules. His queen,
+                                the imperious and very beautiful Titania and he have recently fallen out over the
+                                ownership of a little boy from India who was given as a gift to Titania. The wily
+                                Oberon sends his merry messenger, Puck, to cast a naughty spell on Titania. She
+                                promptly falls in love with Bottom the Weaver, one of a group of villagers who have
+                                come there to rehearse their act for the coming festivities. Bottom, courtesy the
+                                impish Puck, has been transformed into a ridiculous, donkey headed creature. And so
+                                winds on the captivating course of events in A Midsummer Night's Dream!
+                            </p>
+                            <p>
+                                As with most Shakespearean comedies, mistaken identity, twists and turns and
+                                hilarious comic interludes mark this one too. Reputed to have been written some time
+                                during the 1590s, when the playwright was still in his twenties, this play certainly
+                                captures not just a young person's heart, but also appeals to the imagination of an
+                                older audience.
+                            </p>
+                            <p>
+                                Summer nights, romance, music, comedy, pairs of lovers who have yet to confess their
+                                feelings to each other, comedy and more than a touch of magic are all woven into one
+                                of Shakespeare's most delightful and ethereal creations – A Midsummer Night's Dream.
+                            </p>
+                            <p>
+                                The plot is as light and enchanting as the settings themselves. The Duke of Athens
+                                is busy with preparations for his forthcoming wedding to Hippolyta the Amazonian
+                                Queen. In the midst of this, Egeus, an Athenian aristocrat marches in, flanked by
+                                his lovely daughter Hermia and her two suitors, Lysander and Demetrius. Egeus wants
+                                Hermia to marry Demetrius, but she has given her heart to Lysander. The Duke rules
+                                that Hermia must obey her father or else face banishment or execution. Lysander and
+                                Hermia make plans to elope, but here the plot takes an interesting twist. Helena, a
+                                former sweetheart of Demetrius, learns about the lovers' plan and decides that the
+                                way to get back into Demetrius' good books is to tell him about this! The two pairs
+                                land up at the same time in a forest.
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- Put ads later - right -->
+                <div class="col-1">
+                    <div class="row">
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!---------------- End Cover image, chapter list, playing controls, summary ------------------------------------>
+
+</main>
+
+
+<footer class="text-muted py-5">
+    <div class="container border-top">
+        <p class="float-right my-2">
+            <a href="#">Back to top</a>
+        </p>
+        <p class="my-2">Youbookreader is &copy; NHS group!</p>
+    </div>
+</footer>
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -13,118 +13,106 @@
 
     <!-- Additional style -->
     <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            user-select: none;
+
+        .col.card-item  {
+            width: 300px;
+            height: 600px;
+            border-bottom: 1px solid #ffca28;
         }
 
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-
-        .input-group.md-form.form-sm.form-2 input {
-            border: 1px solid #bdbdbd;
-            border-top-left-radius: 0.25rem;
-            border-bottom-left-radius: 0.25rem;
-        }
-
-        .input-group.md-form.form-sm.form-2 input.amber-border {
-            border: 1px solid #ffca28;
-        }
-
-        .col {
-            padding-top: 15px;
-        }
     </style>
 
     <title>YouBookReader</title>
 </head>
+
 <body>
+
 <header>
-    <div class="collapse bg-dark" id="navbarHeader">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-8 col-md-7 py-4">
-                    <h4 class="text-white">About</h4>
-                    <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
-                </div>
-                <div class="col-sm-4 offset-md-1 py-4">
-                    <h4 class="text-white">Contact</h4>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white">Follow on Twitter</a></li>
-                        <li><a href="#" class="text-white">Like on Facebook</a></li>
-                        <li><a href="#" class="text-white">Email me</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="navbar navbar-dark bg-dark shadow-sm">
-        <div class="container">
-            <div class="row  w-100">
-                <div class="col">
-                    <a href="#" class="navbar-brand d-flex align-items-center">
-                        <span><i class="fa fa-book"></i></span>
-                        <span class="mx-2"><strong>Top 100</strong></span>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+        <a class="navbar-brand" href="index.html"><i class="fa fa-book"></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">History</a>
+                </li>
+                <!--<li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
                     </a>
-                </div>
-                <div class="col-md-8">
-                    <!-- Search form -->
-                    <div class="input-group md-form form-sm form-2 pl-0 mt-2 mb-2">
-                        <input class="form-control my-0 py-1 amber-border" type="text" placeholder="Search" aria-label="Search">
-                        <span class="input-group-text amber lighten-3" id="basic-text1"><i class="fa fa-search text-grey" aria-hidden="true"></i></span>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
                     </div>
-                </div>
-                <div class="col">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-            </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>-->
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+            </form>
         </div>
-    </div>
+    </nav>
 </header>
 
 <main>
 
-    <section class="py-3 text-center container">
-        <div class="row py-lg-3">
-            <div class="col-lg-8 col-md-10 mx-auto">
+    <section class="py-1 mt-5 text-center container">
+        <div class="row mt-3 border-bottom">
+            <div class="col mx-auto">
                 <h1 class="fw-light">Explore our collection</h1>
-                <p class="lead text-muted">Explore audio books on favorite categories!</p>
+                <p class="lead text-muted">There's something for everybody</p>
                 <p>
-                    <a href="#" class="btn btn-outline-primary my-2">TOP 100</a>
-                    <a href="#" class="btn btn-outline-primary my-2">BIOGRAPHY</a>
-                    <a href="#" class="btn btn-outline-primary my-2">BUSINESS</a>
-                    <a href="#" class="btn btn-outline-primary my-2">CHILDREN</a>
-                    <a href="#" class="btn btn-outline-primary my-2">FANTASY</a>
-                    <a href="#" class="btn btn-outline-primary my-2">FICTION</a>
-                    <a href="#" class="btn btn-outline-primary my-2">HISTORY</a>
-                    <a href="#" class="btn btn-outline-primary my-2">LITERATURE</a>
-                    <a href="#" class="btn btn-outline-primary my-2">MYSTERY</a>
-                    <a href="#" class="btn btn-outline-primary my-2">NONFICTION</a>
-                    <a href="#" class="btn btn-outline-primary my-2">RELIGION</a>
-                    <a href="#" class="btn btn-outline-primary my-2">ROMANCE</a>
-                    <a href="#" class="btn btn-outline-primary my-2">SCIENCE FICTION</a>
-                    <a href="#" class="btn btn-outline-primary my-2">SUSPENSE</a>
-                    <a href="#" class="btn btn-outline-primary my-2">TECHNOLOGY</a>
-                    <a href="#" class="btn btn-outline-primary my-2">THRILLER</a>
-                    <a href="#" class="btn btn-outline-primary my-2">TRAVEL</a>
-                    <a href="#" class="btn btn-outline-primary my-2">YOUNG ADULT</a>
+                    <button type="button" class="btn btn-outline-primary my-2"><i class="text-warning fa fa-star mx-1"></i>TOP 100</button>
+                    <button type="button" class="btn btn-outline-primary my-2">BIOGRAPHY</button>
+                    <button type="button" class="btn btn-outline-primary my-2">BUSINESS</button>
+                    <button type="button" class="btn btn-outline-primary my-2">CHILDREN</button>
+                    <button type="button" class="btn btn-outline-primary my-2">FANTASY</button>
+                    <button type="button" class="btn btn-outline-primary my-2">FICTION</button>
+                    <button type="button" class="btn btn-outline-primary my-2">HISTORY</button>
+                    <button type="button" class="btn btn-outline-primary my-2">LITERATURE</button>
+                    <button type="button" class="btn btn-outline-primary my-2">MYSTERY</button>
+                    <button type="button" class="btn btn-outline-primary my-2">NONFICTION</button>
+                    <button type="button" class="btn btn-outline-primary my-2">RELIGION</button>
+                    <button type="button" class="btn btn-outline-primary my-2">ROMANCE</button>
+                    <button type="button" class="btn btn-outline-primary my-2">SCIENCE FICTION</button>
+                    <button type="button" class="btn btn-outline-primary my-2">SUSPENSE</button>
+                    <button type="button" class="btn btn-outline-primary my-2">TECHNOLOGY</button>
+                    <button type="button" class="btn btn-outline-primary my-2">THRILLER</button>
+                    <button type="button" class="btn btn-outline-primary my-2">TRAVEL</button>
+                    <button type="button" class="btn btn-outline-primary my-2">YOUNG ADULT</button>
                 </p>
             </div>
         </div>
     </section>
 
-    <div class="py-5 bg-light">
+    <div class="bg-white">
         <div class="container">
-            <div class="row">
+            <div class="row py-1 border-bottom">
                 <div class="col">
+                    <span class="lead fw-light">1,500 results</span>
+                </div>
+                <div class="row lead row-cols-8 mx-2">
+                    <button type="button" class="btn btn-link btn-lg"><i class="text-primary fa fa-sort mx-1"></i>Title</button>
+                    <button type="button" class="btn btn-link btn-lg"><i class="text-primary fa fa-sort mx-1"></i>Author</button>
+                    <button type="button" class="btn btn-link btn-lg"><i class="text-primary fa fa-sort mx-1"></i>Rating</button>
+                    <button type="button" class="btn btn-link btn-lg"><i class="text-primary fa fa-sort mx-1"></i>Duration</button>
+                </div>
+            </div>
+
+            <div class="row row-cols-3">
+                <div class="col-1">
                     <div class="row">
 
                     </div>
@@ -132,11 +120,11 @@
 
                 <div class="col-10">
                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
-                        <div class="col">
-                            <div class="card shadow-sm">
-                                <div class="card-header text-center"><img width="80%" height="80%" src="img/blank_book_cover.jpg" class="shadow rounded-3 mt-2 mb-2"/></div>
+                        <div class="col card-item">
+                            <div class="card border-0">
+                                <div class="card-header text-center border-0 bg-white"><img width="85%" height="85%" src="img/blank_book_cover.jpg" class="shadow rounded-3 mt-2 mb-2"/></div>
                                 <div class="card-body">
-                                    <p class="card-text"><a href="#">A Midsummer Night's Dream</a></p>
+                                    <p class="card-text"><a href="detail.html">A Midsummer Night's Dream</a></p>
                                     <p class="card-text">William Shakespeare</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
@@ -151,9 +139,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="card shadow-sm">
-                                <div class="card-header text-center"><img width="80%" height="80%" src="img/blank_book_cover.jpg" class="shadow rounded-3 mt-2 mb-2"/></div>
+                        <div class="col card-item">
+                            <div class="card border-0">
+                                <div class="card-header text-center border-0 bg-white"><img width="85%" height="85%" src="img/blank_book_cover.jpg" class="shadow rounded-3 mt-2 mb-2"/></div>
                                 <div class="card-body">
                                     <p class="card-text"><a href="#">Myths and Legends of Ancient Greece and Rome</a></p>
                                     <p class="card-text">E.M. Berens</p>
@@ -170,9 +158,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="card shadow-sm">
-                                <div class="card-header text-center"><img width="80%" height="80%" src="img/blank_book_cover.jpg" class="shadow rounded-3 mt-2 mb-2"/></div>
+                        <div class="col card-item">
+                            <div class="card border-0">
+                                <div class="card-header text-center border-0 bg-white"><img width="85%" height="85%" src="img/blank_book_cover.jpg" class="shadow rounded-3 mt-2 mb-2"/></div>
                                 <div class="card-body">
                                     <p class="card-text"><a href="#">The Nixie's Song: Beyond Spiderwick Chronicles, Book One , Book Two, Book Three</a></p>
                                     <p class="card-text">Tony DiTerlizzi, Holly Black, Berens Donny</p>
@@ -190,9 +178,9 @@
                             </div>
                         </div>
 
-                        <div class="col">
-                            <div class="card shadow-sm">
-                                <div class="card-header text-center"><img width="80%" height="80%" src="img/blank_book_cover.jpg" class="shadow rounded-3 mt-2 mb-2"/></div>
+                        <div class="col card-item">
+                            <div class="card border-0">
+                                <div class="card-header text-center border-0 bg-white"><img width="85%" height="85%" src="img/blank_book_cover.jpg" class="shadow rounded-3 mt-2 mb-2"/></div>
                                 <div class="card-body">
                                     <p class="card-text"><a href="#">Myths and Legends of Ancient Greece and Rome</a></p>
                                     <p class="card-text">E.M. Berens</p>
@@ -209,12 +197,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="card shadow-sm">
-                                <div class="card-header text-center"><img width="80%" height="80%" src="img/blank_book_cover.jpg" class="shadow rounded-3 mt-2 mb-2"/></div>
+                        <div class="col card-item">
+                            <div class="card border-0">
+                                <div class="card-header text-center border-0 bg-white"><img width="85%" height="85%" src="img/blank_book_cover.jpg" class="shadow rounded-3 mt-2 mb-2"/></div>
                                 <div class="card-body">
                                     <p class="card-text"><a href="#">The Nixie's Song: Beyond Spiderwick Chronicles, Book One , Book Two, Book Three, Book One , Book Two, Book Three, Book One , Book Two, Book Three</a></p>
-                                    <p class="card-text">Tony DiTerlizzi, Holly Black, Berens Donny, Tony DiTerlizzi, Holly Black, Berens Donnys</p>
+                                    <p class="card-text">Tony DiTerlizzi, Holly Black, Berens Donny, Tony DiTerlizzi, Holly Black</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
                                             <span><i class="text-warning fa fa-star"></i></span>
@@ -228,9 +216,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="card shadow-sm">
-                                <div class="card-header text-center"><img width="80%" height="80%" src="img/blank_book_cover.jpg" class="shadow rounded-3 mt-2 mb-2"/></div>
+                        <div class="col card-item">
+                            <div class="card border-0">
+                                <div class="card-header text-center border-0 bg-white"><img width="85%" height="85%" src="img/blank_book_cover.jpg" class="shadow rounded-3 mt-2 mb-2"/></div>
                                 <div class="card-body">
                                     <p class="card-text"><a href="#">A Midsummer Night's Dream</a></p>
                                     <p class="card-text">William Shakespeare</p>
@@ -248,9 +236,9 @@
                             </div>
                         </div>
 
-                        <div class="col">
-                            <div class="card shadow-sm">
-                                <div class="card-header text-center"><img width="80%" height="80%" src="img/blank_book_cover.jpg" class="shadow rounded-3 mt-2 mb-2"/></div>
+                        <div class="col card-item">
+                            <div class="card border-0">
+                                <div class="card-header text-center border-0 bg-white"><img width="85%" height="85%" src="img/blank_book_cover.jpg" class="shadow rounded-3 mt-2 mb-2"/></div>
                                 <div class="card-body">
                                     <p class="card-text"><a href="#">Myths and Legends of Ancient Greece and Rome</a></p>
                                     <p class="card-text">E.M. Berens</p>
@@ -267,9 +255,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="card shadow-sm">
-                                <div class="card-header text-center"><img width="80%" height="80%" src="img/blank_book_cover.jpg" class="shadow rounded-3 mt-2 mb-2"/></div>
+                        <div class="col card-item">
+                            <div class="card border-0">
+                                <div class="card-header text-center border-0 bg-white"><img width="85%" height="85%" src="img/blank_book_cover.jpg" class="shadow rounded-3 mt-2 mb-2"/></div>
                                 <div class="card-body">
                                     <p class="card-text"><a href="#">Myths and Legends of Ancient Greece and Rome</a></p>
                                     <p class="card-text">E.M. Berens</p>
@@ -286,9 +274,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="card shadow-sm">
-                                <div class="card-header text-center"><img width="80%" height="80%" src="img/blank_book_cover.jpg" class="shadow rounded-3 mt-2 mb-2"/></div>
+                        <div class="col card-item">
+                            <div class="card border-0">
+                                <div class="card-header text-center border-0 bg-white"><img width="85%" height="85%" src="img/blank_book_cover.jpg" class="shadow rounded-3 mt-2 mb-2"/></div>
                                 <div class="card-body">
                                     <p class="card-text"><a href="#">Myths and Legends of Ancient Greece and Rome</a></p>
                                     <p class="card-text">E.M. Berens</p>
@@ -308,6 +296,12 @@
                     </div>
                 </div>
 
+                <div class="col-1">
+                    <div class="row">
+
+                    </div>
+                </div>
+
             </div>
 
         </div>
@@ -317,11 +311,11 @@
 
 
 <footer class="text-muted py-5">
-    <div class="container">
-        <p class="float-end mb-1">
+    <div class="container border-top">
+        <p class="float-right my-2">
             <a href="#">Back to top</a>
         </p>
-        <p class="mb-1">Youbookreader is &copy; NHS group!</p>
+        <p class="my-2">Youbookreader is &copy; NHS group!</p>
     </div>
 </footer>
 
