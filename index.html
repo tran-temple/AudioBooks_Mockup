@@ -12,29 +12,16 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <!-- Additional style -->
-    <style>
-
-        .col.card-item  {
-            width: 300px;
-            height: 620px;
-            border-bottom: 1px solid #ffca28;
-        }
-
-        .image_item {
-            min-width: 250px;
-            min-height: 320px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="myStyles.css"/>
 
     <title>YouBookReader</title>
 </head>
 
-<body>
+<body class="bg-light">
 
 <header>
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light nav_background">
         <a class="navbar-brand" href="index.html"><i class="fa fa-book"></i></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -105,14 +92,14 @@
     <!---------------- End collection and group of categories ------------------------------------>
 
     <!----------------------- Start group of books ------------------------------------>
-    <div class="bg-white">
+    <div class="bg-light">
         <div class="container">
             <!-------- Result and sorting -------->
             <div class="row py-1 border-bottom">
                 <div class="col">
                     <span class="lead fw-light">1,500 results</span>
                 </div>
-                <div class="row lead row-cols-8 mx-2">
+                <div class="row row-cols-8 lead ml-2">
                     <button type="button" class="btn btn-link btn-lg"><i class="text-primary fa fa-sort mx-1"></i>Title</button>
                     <button type="button" class="btn btn-link btn-lg"><i class="text-primary fa fa-sort mx-1"></i>Author</button>
                     <button type="button" class="btn btn-link btn-lg"><i class="text-primary fa fa-sort mx-1"></i>Rating</button>
@@ -120,193 +107,186 @@
                 </div>
             </div>
 
-            <!-- Ads left - group of books - Ads right -->
-            <div class="row">
+            <!---------- Book list ---------->
+            <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 justify-content-between"> <!--display minimum 4 books at the large break points-->
+                <!------ start one book item ------>
+                <div class="card_item my-3 mx-1 shadow bg-white">
+                    <div class="card border-0">
+                        <div class="card-header text-center border-0"><img src="img/blank_book_cover.jpg" class="shadow w-100"/></div>
+                        <div class="card-body">
+                            <p class="card-text"><a href="detail.html">A Midsummer Night's Dream</a></p>
+                            <p class="card-text">William Shakespeare</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                </div>
+                                <small class="mx-1 text-muted">Duration: 1h 10 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------ end one book item ------>
 
-                <!---------- books list ----------------->
-                <div class="col">
-                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4"> <!--display maximum 3 books at medium to large break points-->
-                        <!------ start one book item ------>
-                        <div class="col card-item">
-                            <div class="card border-0">
-                                <div class="card-header text-center border-0 bg-white image_item"><img width="85%" height="85%" src="img/blank_book_cover.jpg" class="shadow rounded-3 mt-2 mb-2"/></div>
-                                <div class="card-body">
-                                    <p class="card-text"><a href="detail.html">A Midsummer Night's Dream</a></p>
-                                    <p class="card-text">William Shakespeare</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <i class="text-warning fa fa-star"></i>
-                                            <i class="text-warning fa fa-star"></i>
-                                            <i class="text-warning fa fa-star"></i>
-                                            <i class="text-warning fa fa-star"></i>
-                                            <i class="text-warning fa fa-star"></i>
-                                        </div>
-                                        <small class="text-muted">Duration: 1h 10 mins</small>
-                                    </div>
+                <div class="card_item my-3 mx-1 shadow bg-white">
+                    <div class="card border-0">
+                        <div class="card-header text-center border-0"><img src="img/blank_book_cover.jpg" class="shadow w-100"/></div>
+                        <div class="card-body">
+                            <p class="card-text"><a href="#">Myths and Legends of Ancient Greece and Rome</a></p>
+                            <p class="card-text">E.M. Berens</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
                                 </div>
+                                <small class="mx-1 text-muted">Duration: 1h 10 mins</small>
                             </div>
                         </div>
-                        <!------ end one book item ------>
-
-                        <div class="col card-item">
-                            <div class="card border-0">
-                                <div class="card-header text-center border-0 bg-white image_item"><img width="85%" height="85%" src="img/blank_book_cover.jpg" class="shadow rounded-3 mt-2 mb-2"/></div>
-                                <div class="card-body">
-                                    <p class="card-text"><a href="#">Myths and Legends of Ancient Greece and Rome</a></p>
-                                    <p class="card-text">E.M. Berens</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <i class="text-warning fa fa-star"></i>
-                                            <i class="text-warning fa fa-star"></i>
-                                            <i class="text-warning fa fa-star"></i>
-                                            <i class="text-warning fa fa-star"></i>
-                                            <i class="text-warning fa fa-star"></i>
-                                        </div>
-                                        <small class="text-muted">Duration: 1h 10 mins</small>
-                                    </div>
+                    </div>
+                </div>
+                <div class="card_item my-3 mx-1 shadow bg-white">
+                    <div class="card border-0">
+                        <div class="card-header text-center border-0"><img src="img/blank_book_cover.jpg" class="shadow w-100"/></div>
+                        <div class="card-body">
+                            <p class="card-text"><a href="#">The Nixie's Song: Beyond Spiderwick Chronicles, Book One , Book Two, Book Three</a></p>
+                            <p class="card-text">Tony DiTerlizzi, Holly Black, Berens Donny</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col card-item">
-                            <div class="card border-0">
-                                <div class="card-header text-center border-0 bg-white image_item"><img width="85%" height="85%" src="img/blank_book_cover.jpg" class="shadow rounded-3 mt-2 mb-2"/></div>
-                                <div class="card-body">
-                                    <p class="card-text"><a href="#">The Nixie's Song: Beyond Spiderwick Chronicles, Book One , Book Two, Book Three</a></p>
-                                    <p class="card-text">Tony DiTerlizzi, Holly Black, Berens Donny</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <i class="text-warning fa fa-star"></i>
-                                            <i class="text-warning fa fa-star"></i>
-                                            <i class="text-warning fa fa-star"></i>
-                                            <i class="text-warning fa fa-star"></i>
-                                            <i class="text-warning fa fa-star"></i>
-                                        </div>
-                                        <small class="text-muted">Duration: 3h 10 mins</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col card-item">
-                            <div class="card border-0">
-                                <div class="card-header text-center border-0 bg-white image_item"><img width="85%" height="85%" src="img/blank_book_cover.jpg" class="shadow rounded-3 mt-2 mb-2"/></div>
-                                <div class="card-body">
-                                    <p class="card-text"><a href="#">Myths and Legends of Ancient Greece and Rome</a></p>
-                                    <p class="card-text">E.M. Berens</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <i class="text-warning fa fa-star"></i>
-                                            <i class="text-warning fa fa-star"></i>
-                                            <i class="text-warning fa fa-star"></i>
-                                            <i class="text-warning fa fa-star"></i>
-                                            <i class="text-warning fa fa-star"></i>
-                                        </div>
-                                        <small class="text-muted">Duration: 1h 10 mins</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col card-item">
-                            <div class="card border-0">
-                                <div class="card-header text-center border-0 bg-white image_item"><img width="85%" height="85%" src="img/blank_book_cover.jpg" class="shadow rounded-3 mt-2 mb-2"/></div>
-                                <div class="card-body">
-                                    <p class="card-text"><a href="#">The Nixie's Song: Beyond Spiderwick Chronicles, Book One , Book Two, Book Three, Book One , Book Two, Book Three, Book One , Book Two, Book Three</a></p>
-                                    <p class="card-text">Tony DiTerlizzi, Holly Black, Berens Donny, Tony DiTerlizzi, Holly Black</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <i class="text-warning fa fa-star"></i>
-                                            <i class="text-warning fa fa-star"></i>
-                                            <i class="text-warning fa fa-star"></i>
-                                            <i class="text-warning fa fa-star"></i>
-                                            <i class="text-warning fa fa-star"></i>
-                                        </div>
-                                        <small class="text-muted">Duration: 3h 10 mins</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col card-item">
-                            <div class="card border-0">
-                                <div class="card-header text-center border-0 bg-white image_item"><img width="85%" height="85%" src="img/blank_book_cover.jpg" class="shadow rounded-3 mt-2 mb-2"/></div>
-                                <div class="card-body">
-                                    <p class="card-text"><a href="#">A Midsummer Night's Dream</a></p>
-                                    <p class="card-text">William Shakespeare</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <i class="text-warning fa fa-star"></i>
-                                            <i class="text-warning fa fa-star"></i>
-                                            <i class="text-warning fa fa-star"></i>
-                                            <i class="text-warning fa fa-star"></i>
-                                            <i class="text-warning fa fa-star"></i>
-                                        </div>
-                                        <small class="text-muted">Duration: 1h 10 mins</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col card-item">
-                            <div class="card border-0">
-                                <div class="card-header text-center border-0 bg-white image_item"><img width="85%" height="85%" src="img/blank_book_cover.jpg" class="shadow rounded-3 mt-2 mb-2"/></div>
-                                <div class="card-body">
-                                    <p class="card-text"><a href="#">Myths and Legends of Ancient Greece and Rome</a></p>
-                                    <p class="card-text">E.M. Berens</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <i class="text-warning fa fa-star"></i>
-                                            <i class="text-warning fa fa-star"></i>
-                                            <i class="text-warning fa fa-star"></i>
-                                            <i class="text-warning fa fa-star"></i>
-                                            <i class="text-warning fa fa-star"></i>
-                                        </div>
-                                        <small class="text-muted">Duration: 1h 10 mins</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col card-item">
-                            <div class="card border-0">
-                                <div class="card-header text-center border-0 bg-white image_item"><img width="85%" height="85%" src="img/blank_book_cover.jpg" class="shadow rounded-3 mt-2 mb-2"/></div>
-                                <div class="card-body">
-                                    <p class="card-text"><a href="#">Myths and Legends of Ancient Greece and Rome</a></p>
-                                    <p class="card-text">E.M. Berens</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <i class="text-warning fa fa-star"></i>
-                                            <i class="text-warning fa fa-star"></i>
-                                            <i class="text-warning fa fa-star"></i>
-                                            <i class="text-warning fa fa-star"></i>
-                                            <i class="text-warning fa fa-star"></i>
-                                        </div>
-                                        <small class="text-muted">Duration: 1h 10 mins</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col card-item">
-                            <div class="card border-0">
-                                <div class="card-header text-center border-0 bg-white image_item"><img width="85%" height="85%" src="img/blank_book_cover.jpg" class="shadow rounded-3 mt-2 mb-2"/></div>
-                                <div class="card-body">
-                                    <p class="card-text"><a href="#">Myths and Legends of Ancient Greece and Rome</a></p>
-                                    <p class="card-text">E.M. Berens</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <i class="text-warning fa fa-star"></i>
-                                            <i class="text-warning fa fa-star"></i>
-                                            <i class="text-warning fa fa-star"></i>
-                                            <i class="text-warning fa fa-star"></i>
-                                            <i class="text-warning fa fa-star"></i>
-                                        </div>
-                                        <small class="text-muted">Duration: 1h 10 mins</small>
-                                    </div>
-                                </div>
+                                <small class="mx-1 text-muted">Duration: 3h 10 mins</small>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <div class="card_item my-3 mx-1 shadow bg-white">
+                    <div class="card border-0">
+                        <div class="card-header text-center border-0"><img src="img/blank_book_cover.jpg" class="shadow w-100"/></div>
+                        <div class="card-body">
+                            <p class="card-text"><a href="#">Myths and Legends of Ancient Greece and Rome</a></p>
+                            <p class="card-text">E.M. Berens</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                </div>
+                                <small class="mx-1 text-muted">Duration: 1h 10 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_item my-3 mx-1 shadow bg-white">
+                    <div class="card border-0">
+                        <div class="card-header text-center border-0"><img src="img/blank_book_cover.jpg" class="shadow w-100"/></div>
+                        <div class="card-body">
+                            <p class="card-text"><a href="#">The Nixie's Song: Beyond Spiderwick Chronicles, Book One , Book Two, Book Three, Book One , Book Two, Book Three, Book One , Book Two, Book Three</a></p>
+                            <p class="card-text">Tony DiTerlizzi, Holly Black, Berens Donny, Tony DiTerlizzi, Holly Black</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                </div>
+                                <small class="mx-1 text-muted">Duration: 3h 10 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_item my-3 mx-1 shadow bg-white">
+                    <div class="card border-0">
+                        <div class="card-header text-center border-0"><img src="img/blank_book_cover.jpg" class="shadow w-100"/></div>
+                        <div class="card-body">
+                            <p class="card-text"><a href="#">A Midsummer Night's Dream</a></p>
+                            <p class="card-text">William Shakespeare</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                </div>
+                                <small class="mx-1 text-muted">Duration: 1h 10 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="card_item my-3 mx-1 shadow bg-white">
+                    <div class="card border-0">
+                        <div class="card-header text-center border-0"><img src="img/blank_book_cover.jpg" class="shadow w-100"/></div>
+                        <div class="card-body">
+                            <p class="card-text"><a href="#">Myths and Legends of Ancient Greece and Rome</a></p>
+                            <p class="card-text">E.M. Berens</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                </div>
+                                <small class="mx-1 text-muted">Duration: 1h 10 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_item my-3 mx-1 shadow bg-white">
+                    <div class="card border-0">
+                        <div class="card-header text-center border-0"><img src="img/blank_book_cover.jpg" class="shadow w-100"/></div>
+                        <div class="card-body">
+                            <p class="card-text"><a href="#">Myths and Legends of Ancient Greece and Rome</a></p>
+                            <p class="card-text">E.M. Berens</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                </div>
+                                <small class="mx-1 text-muted">Duration: 1h 10 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_item my-3 mx-1 shadow bg-white">
+                    <div class="card border-0">
+                        <div class="card-header text-center border-0"><img src="img/blank_book_cover.jpg" class="shadow w-100"/></div>
+                        <div class="card-body">
+                            <p class="card-text"><a href="#">Myths and Legends of Ancient Greece and Rome</a></p>
+                            <p class="card-text">E.M. Berens</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                </div>
+                                <small class="mx-1 text-muted">Duration: 1h 10 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
 
         </div>
     </div>

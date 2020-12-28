@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf457cc5-67e3-4917-b7e5-020992eaa090" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/myStyles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/history.html" beforeDir="false" afterPath="$PROJECT_DIR$/history.html" afterDir="false" />
@@ -16,6 +17,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -34,6 +36,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -54,7 +57,8 @@
       <workItem from="1608650110773" duration="8918000" />
       <workItem from="1608749330933" duration="12144000" />
       <workItem from="1608995655250" duration="16094000" />
-      <workItem from="1609080293530" duration="13347000" />
+      <workItem from="1609080293530" duration="13406000" />
+      <workItem from="1609185148900" duration="7582000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,26 @@
+.card_item  {
+    min-width: 270px;
+    border-bottom: 1px solid #ffca28;
+}
+
+.summary {
+}
+
+.chapter_list {
+    height: 550px;
+    min-width: 350px;
+    text-align: left;
+}
+
+.image_player {
+    min-width: 300px;
+}
+
+.volume {
+    width: 250px;
+}
+
+.nav_background {
+    /* background-color: #e3f2fd; */
+    background-color: lightskyblue;
+}
