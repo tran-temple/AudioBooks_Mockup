@@ -16,8 +16,13 @@
 
         .col.card-item  {
             width: 300px;
-            height: 600px;
+            height: 620px;
             border-bottom: 1px solid #ffca28;
+        }
+
+        .image_item {
+            min-width: 250px;
+            min-height: 320px;
         }
 
     </style>
@@ -68,6 +73,7 @@
 
 <main>
 
+    <!---------------- Start collection and group of categories ------------------------------------>
     <section class="py-1 mt-5 text-center container">
         <div class="row mt-3 border-bottom">
             <div class="col mx-auto">
@@ -96,9 +102,12 @@
             </div>
         </div>
     </section>
+    <!---------------- End collection and group of categories ------------------------------------>
 
+    <!----------------------- Start group of books ------------------------------------>
     <div class="bg-white">
         <div class="container">
+            <!-------- Result and sorting -------->
             <div class="row py-1 border-bottom">
                 <div class="col">
                     <span class="lead fw-light">1,500 results</span>
@@ -111,47 +120,47 @@
                 </div>
             </div>
 
-            <div class="row row-cols-3">
-                <div class="col-1">
-                    <div class="row">
+            <!-- Ads left - group of books - Ads right -->
+            <div class="row">
 
-                    </div>
-                </div>
-
-                <div class="col-10">
-                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+                <!---------- books list ----------------->
+                <div class="col">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4"> <!--display maximum 3 books at medium to large break points-->
+                        <!------ start one book item ------>
                         <div class="col card-item">
                             <div class="card border-0">
-                                <div class="card-header text-center border-0 bg-white"><img width="85%" height="85%" src="img/blank_book_cover.jpg" class="shadow rounded-3 mt-2 mb-2"/></div>
+                                <div class="card-header text-center border-0 bg-white image_item"><img width="85%" height="85%" src="img/blank_book_cover.jpg" class="shadow rounded-3 mt-2 mb-2"/></div>
                                 <div class="card-body">
                                     <p class="card-text"><a href="detail.html">A Midsummer Night's Dream</a></p>
                                     <p class="card-text">William Shakespeare</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
-                                            <span><i class="text-warning fa fa-star"></i></span>
-                                            <span><i class="text-warning fa fa-star"></i></span>
-                                            <span><i class="text-warning fa fa-star"></i></span>
-                                            <span><i class="text-warning fa fa-star"></i></span>
-                                            <span><i class="text-warning fa fa-star"></i></span>
+                                            <i class="text-warning fa fa-star"></i>
+                                            <i class="text-warning fa fa-star"></i>
+                                            <i class="text-warning fa fa-star"></i>
+                                            <i class="text-warning fa fa-star"></i>
+                                            <i class="text-warning fa fa-star"></i>
                                         </div>
                                         <small class="text-muted">Duration: 1h 10 mins</small>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!------ end one book item ------>
+
                         <div class="col card-item">
                             <div class="card border-0">
-                                <div class="card-header text-center border-0 bg-white"><img width="85%" height="85%" src="img/blank_book_cover.jpg" class="shadow rounded-3 mt-2 mb-2"/></div>
+                                <div class="card-header text-center border-0 bg-white image_item"><img width="85%" height="85%" src="img/blank_book_cover.jpg" class="shadow rounded-3 mt-2 mb-2"/></div>
                                 <div class="card-body">
                                     <p class="card-text"><a href="#">Myths and Legends of Ancient Greece and Rome</a></p>
                                     <p class="card-text">E.M. Berens</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
-                                            <span><i class="text-warning fa fa-star"></i></span>
-                                            <span><i class="text-warning fa fa-star"></i></span>
-                                            <span><i class="text-warning fa fa-star"></i></span>
-                                            <span><i class="text-warning fa fa-star"></i></span>
-                                            <span><i class="text-warning fa fa-star"></i></span>
+                                            <i class="text-warning fa fa-star"></i>
+                                            <i class="text-warning fa fa-star"></i>
+                                            <i class="text-warning fa fa-star"></i>
+                                            <i class="text-warning fa fa-star"></i>
+                                            <i class="text-warning fa fa-star"></i>
                                         </div>
                                         <small class="text-muted">Duration: 1h 10 mins</small>
                                     </div>
@@ -160,17 +169,17 @@
                         </div>
                         <div class="col card-item">
                             <div class="card border-0">
-                                <div class="card-header text-center border-0 bg-white"><img width="85%" height="85%" src="img/blank_book_cover.jpg" class="shadow rounded-3 mt-2 mb-2"/></div>
+                                <div class="card-header text-center border-0 bg-white image_item"><img width="85%" height="85%" src="img/blank_book_cover.jpg" class="shadow rounded-3 mt-2 mb-2"/></div>
                                 <div class="card-body">
                                     <p class="card-text"><a href="#">The Nixie's Song: Beyond Spiderwick Chronicles, Book One , Book Two, Book Three</a></p>
                                     <p class="card-text">Tony DiTerlizzi, Holly Black, Berens Donny</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
-                                            <span><i class="text-warning fa fa-star"></i></span>
-                                            <span><i class="text-warning fa fa-star"></i></span>
-                                            <span><i class="text-warning fa fa-star"></i></span>
-                                            <span><i class="text-warning fa fa-star"></i></span>
-                                            <span><i class="text-warning fa fa-star"></i></span>
+                                            <i class="text-warning fa fa-star"></i>
+                                            <i class="text-warning fa fa-star"></i>
+                                            <i class="text-warning fa fa-star"></i>
+                                            <i class="text-warning fa fa-star"></i>
+                                            <i class="text-warning fa fa-star"></i>
                                         </div>
                                         <small class="text-muted">Duration: 3h 10 mins</small>
                                     </div>
@@ -180,17 +189,17 @@
 
                         <div class="col card-item">
                             <div class="card border-0">
-                                <div class="card-header text-center border-0 bg-white"><img width="85%" height="85%" src="img/blank_book_cover.jpg" class="shadow rounded-3 mt-2 mb-2"/></div>
+                                <div class="card-header text-center border-0 bg-white image_item"><img width="85%" height="85%" src="img/blank_book_cover.jpg" class="shadow rounded-3 mt-2 mb-2"/></div>
                                 <div class="card-body">
                                     <p class="card-text"><a href="#">Myths and Legends of Ancient Greece and Rome</a></p>
                                     <p class="card-text">E.M. Berens</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
-                                            <span><i class="text-warning fa fa-star"></i></span>
-                                            <span><i class="text-warning fa fa-star"></i></span>
-                                            <span><i class="text-warning fa fa-star"></i></span>
-                                            <span><i class="text-warning fa fa-star"></i></span>
-                                            <span><i class="text-warning fa fa-star"></i></span>
+                                            <i class="text-warning fa fa-star"></i>
+                                            <i class="text-warning fa fa-star"></i>
+                                            <i class="text-warning fa fa-star"></i>
+                                            <i class="text-warning fa fa-star"></i>
+                                            <i class="text-warning fa fa-star"></i>
                                         </div>
                                         <small class="text-muted">Duration: 1h 10 mins</small>
                                     </div>
@@ -199,17 +208,17 @@
                         </div>
                         <div class="col card-item">
                             <div class="card border-0">
-                                <div class="card-header text-center border-0 bg-white"><img width="85%" height="85%" src="img/blank_book_cover.jpg" class="shadow rounded-3 mt-2 mb-2"/></div>
+                                <div class="card-header text-center border-0 bg-white image_item"><img width="85%" height="85%" src="img/blank_book_cover.jpg" class="shadow rounded-3 mt-2 mb-2"/></div>
                                 <div class="card-body">
                                     <p class="card-text"><a href="#">The Nixie's Song: Beyond Spiderwick Chronicles, Book One , Book Two, Book Three, Book One , Book Two, Book Three, Book One , Book Two, Book Three</a></p>
                                     <p class="card-text">Tony DiTerlizzi, Holly Black, Berens Donny, Tony DiTerlizzi, Holly Black</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
-                                            <span><i class="text-warning fa fa-star"></i></span>
-                                            <span><i class="text-warning fa fa-star"></i></span>
-                                            <span><i class="text-warning fa fa-star"></i></span>
-                                            <span><i class="text-warning fa fa-star"></i></span>
-                                            <span><i class="text-warning fa fa-star"></i></span>
+                                            <i class="text-warning fa fa-star"></i>
+                                            <i class="text-warning fa fa-star"></i>
+                                            <i class="text-warning fa fa-star"></i>
+                                            <i class="text-warning fa fa-star"></i>
+                                            <i class="text-warning fa fa-star"></i>
                                         </div>
                                         <small class="text-muted">Duration: 3h 10 mins</small>
                                     </div>
@@ -218,17 +227,17 @@
                         </div>
                         <div class="col card-item">
                             <div class="card border-0">
-                                <div class="card-header text-center border-0 bg-white"><img width="85%" height="85%" src="img/blank_book_cover.jpg" class="shadow rounded-3 mt-2 mb-2"/></div>
+                                <div class="card-header text-center border-0 bg-white image_item"><img width="85%" height="85%" src="img/blank_book_cover.jpg" class="shadow rounded-3 mt-2 mb-2"/></div>
                                 <div class="card-body">
                                     <p class="card-text"><a href="#">A Midsummer Night's Dream</a></p>
                                     <p class="card-text">William Shakespeare</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
-                                            <span><i class="text-warning fa fa-star"></i></span>
-                                            <span><i class="text-warning fa fa-star"></i></span>
-                                            <span><i class="text-warning fa fa-star"></i></span>
-                                            <span><i class="text-warning fa fa-star"></i></span>
-                                            <span><i class="text-warning fa fa-star"></i></span>
+                                            <i class="text-warning fa fa-star"></i>
+                                            <i class="text-warning fa fa-star"></i>
+                                            <i class="text-warning fa fa-star"></i>
+                                            <i class="text-warning fa fa-star"></i>
+                                            <i class="text-warning fa fa-star"></i>
                                         </div>
                                         <small class="text-muted">Duration: 1h 10 mins</small>
                                     </div>
@@ -238,17 +247,17 @@
 
                         <div class="col card-item">
                             <div class="card border-0">
-                                <div class="card-header text-center border-0 bg-white"><img width="85%" height="85%" src="img/blank_book_cover.jpg" class="shadow rounded-3 mt-2 mb-2"/></div>
+                                <div class="card-header text-center border-0 bg-white image_item"><img width="85%" height="85%" src="img/blank_book_cover.jpg" class="shadow rounded-3 mt-2 mb-2"/></div>
                                 <div class="card-body">
                                     <p class="card-text"><a href="#">Myths and Legends of Ancient Greece and Rome</a></p>
                                     <p class="card-text">E.M. Berens</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
-                                            <span><i class="text-warning fa fa-star"></i></span>
-                                            <span><i class="text-warning fa fa-star"></i></span>
-                                            <span><i class="text-warning fa fa-star"></i></span>
-                                            <span><i class="text-warning fa fa-star"></i></span>
-                                            <span><i class="text-warning fa fa-star"></i></span>
+                                            <i class="text-warning fa fa-star"></i>
+                                            <i class="text-warning fa fa-star"></i>
+                                            <i class="text-warning fa fa-star"></i>
+                                            <i class="text-warning fa fa-star"></i>
+                                            <i class="text-warning fa fa-star"></i>
                                         </div>
                                         <small class="text-muted">Duration: 1h 10 mins</small>
                                     </div>
@@ -257,17 +266,17 @@
                         </div>
                         <div class="col card-item">
                             <div class="card border-0">
-                                <div class="card-header text-center border-0 bg-white"><img width="85%" height="85%" src="img/blank_book_cover.jpg" class="shadow rounded-3 mt-2 mb-2"/></div>
+                                <div class="card-header text-center border-0 bg-white image_item"><img width="85%" height="85%" src="img/blank_book_cover.jpg" class="shadow rounded-3 mt-2 mb-2"/></div>
                                 <div class="card-body">
                                     <p class="card-text"><a href="#">Myths and Legends of Ancient Greece and Rome</a></p>
                                     <p class="card-text">E.M. Berens</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
-                                            <span><i class="text-warning fa fa-star"></i></span>
-                                            <span><i class="text-warning fa fa-star"></i></span>
-                                            <span><i class="text-warning fa fa-star"></i></span>
-                                            <span><i class="text-warning fa fa-star"></i></span>
-                                            <span><i class="text-warning fa fa-star"></i></span>
+                                            <i class="text-warning fa fa-star"></i>
+                                            <i class="text-warning fa fa-star"></i>
+                                            <i class="text-warning fa fa-star"></i>
+                                            <i class="text-warning fa fa-star"></i>
+                                            <i class="text-warning fa fa-star"></i>
                                         </div>
                                         <small class="text-muted">Duration: 1h 10 mins</small>
                                     </div>
@@ -276,17 +285,17 @@
                         </div>
                         <div class="col card-item">
                             <div class="card border-0">
-                                <div class="card-header text-center border-0 bg-white"><img width="85%" height="85%" src="img/blank_book_cover.jpg" class="shadow rounded-3 mt-2 mb-2"/></div>
+                                <div class="card-header text-center border-0 bg-white image_item"><img width="85%" height="85%" src="img/blank_book_cover.jpg" class="shadow rounded-3 mt-2 mb-2"/></div>
                                 <div class="card-body">
                                     <p class="card-text"><a href="#">Myths and Legends of Ancient Greece and Rome</a></p>
                                     <p class="card-text">E.M. Berens</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
-                                            <span><i class="text-warning fa fa-star"></i></span>
-                                            <span><i class="text-warning fa fa-star"></i></span>
-                                            <span><i class="text-warning fa fa-star"></i></span>
-                                            <span><i class="text-warning fa fa-star"></i></span>
-                                            <span><i class="text-warning fa fa-star"></i></span>
+                                            <i class="text-warning fa fa-star"></i>
+                                            <i class="text-warning fa fa-star"></i>
+                                            <i class="text-warning fa fa-star"></i>
+                                            <i class="text-warning fa fa-star"></i>
+                                            <i class="text-warning fa fa-star"></i>
                                         </div>
                                         <small class="text-muted">Duration: 1h 10 mins</small>
                                     </div>
@@ -296,16 +305,12 @@
                     </div>
                 </div>
 
-                <div class="col-1">
-                    <div class="row">
-
-                    </div>
-                </div>
 
             </div>
 
         </div>
     </div>
+    <!----------------------- End group of books ------------------------------------>
 
 </main>
 
