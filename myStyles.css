@@ -23,3 +23,11 @@
     /* background-color: #e3f2fd; */
     background-color: lightskyblue;
 }
+
+.btn-link:focus,
+.btn-link:active,
+.btn-link.active {
+    color: #0a58ca;
+    font-weight: bold;
+    font-size: larger;
+}
