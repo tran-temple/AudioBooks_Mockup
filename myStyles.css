@@ -8,12 +8,13 @@
 
 .chapter_list {
     min-width: 350px;
-    height: 750px;
+    min-height: 700px;
     text-align: left;
 }
 
 .image_player {
-    min-width: 300px;
+    min-width: 350px;
+    min-height: 700px;
 }
 
 .volume {
