@@ -16,6 +16,31 @@
     <!-- Additional style -->
     <link rel="stylesheet" href="myStyles.css"/>
 
+    <style>
+        #module {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        #module #collapseExample.collapse:not(.show) {
+            display: block;
+            height: 3rem;
+            overflow: hidden;
+        }
+
+        #module #collapseExample.collapsing {
+            height: 3rem;
+        }
+
+        #module a.collapsed:after {
+            content: '+ Show More';
+        }
+
+        #module a:not(.collapsed):after {
+            content: '- Show Less';
+        }
+    </style>
+
     <title>YouBookReader</title>
 </head>
 
@@ -147,14 +172,13 @@
             </div>
 
             <!------- Summary ---------->
-            <div class="row row-cols-1 border shadow bg-white p-3 my-3 text-justify summary">
+            <div id="module" class="row row-cols-1 border shadow bg-white p-3 my-3 text-justify summary">
                 <h5>Summary:</h5>
-                <p>
+                <p class="collapse" id="collapseExample" aria-expanded="false">
                     Summer nights, romance, music, comedy, pairs of lovers who have yet to confess their
                     feelings to each other, comedy and more than a touch of magic are all woven into one
                     of Shakespeare's most delightful and ethereal creations – A Midsummer Night's Dream.
-                </p>
-                <p>
+                    <br/><br/>
                     The plot is as light and enchanting as the settings themselves. The Duke of Athens
                     is busy with preparations for his forthcoming wedding to Hippolyta the Amazonian
                     Queen. In the midst of this, Egeus, an Athenian aristocrat marches in, flanked by
@@ -164,52 +188,9 @@
                     Hermia make plans to elope, but here the plot takes an interesting twist. Helena, a
                     former sweetheart of Demetrius, learns about the lovers' plan and decides that the
                     way to get back into Demetrius' good books is to tell him about this! The two pairs
-                    land up at the same time in a forest.
                 </p>
-                <p>
-                    This enchanted wood near Athens is where Oberon, King of Fairies rules. His queen,
-                    the imperious and very beautiful Titania and he have recently fallen out over the
-                    ownership of a little boy from India who was given as a gift to Titania. The wily
-                    Oberon sends his merry messenger, Puck, to cast a naughty spell on Titania. She
-                    promptly falls in love with Bottom the Weaver, one of a group of villagers who have
-                    come there to rehearse their act for the coming festivities. Bottom, courtesy the
-                    impish Puck, has been transformed into a ridiculous, donkey headed creature. And so
-                    winds on the captivating course of events in A Midsummer Night's Dream!
-                </p>
-                <p>
-                    This enchanted wood near Athens is where Oberon, King of Fairies rules. His queen,
-                    the imperious and very beautiful Titania and he have recently fallen out over the
-                    ownership of a little boy from India who was given as a gift to Titania. The wily
-                    Oberon sends his merry messenger, Puck, to cast a naughty spell on Titania. She
-                    promptly falls in love with Bottom the Weaver, one of a group of villagers who have
-                    come there to rehearse their act for the coming festivities. Bottom, courtesy the
-                    impish Puck, has been transformed into a ridiculous, donkey headed creature. And so
-                    winds on the captivating course of events in A Midsummer Night's Dream!
-                </p>
-                <p>
-                    As with most Shakespearean comedies, mistaken identity, twists and turns and
-                    hilarious comic interludes mark this one too. Reputed to have been written some time
-                    during the 1590s, when the playwright was still in his twenties, this play certainly
-                    captures not just a young person's heart, but also appeals to the imagination of an
-                    older audience.
-                </p>
-                <p>
-                    Summer nights, romance, music, comedy, pairs of lovers who have yet to confess their
-                    feelings to each other, comedy and more than a touch of magic are all woven into one
-                    of Shakespeare's most delightful and ethereal creations – A Midsummer Night's Dream.
-                </p>
-                <p>
-                    The plot is as light and enchanting as the settings themselves. The Duke of Athens
-                    is busy with preparations for his forthcoming wedding to Hippolyta the Amazonian
-                    Queen. In the midst of this, Egeus, an Athenian aristocrat marches in, flanked by
-                    his lovely daughter Hermia and her two suitors, Lysander and Demetrius. Egeus wants
-                    Hermia to marry Demetrius, but she has given her heart to Lysander. The Duke rules
-                    that Hermia must obey her father or else face banishment or execution. Lysander and
-                    Hermia make plans to elope, but here the plot takes an interesting twist. Helena, a
-                    former sweetheart of Demetrius, learns about the lovers' plan and decides that the
-                    way to get back into Demetrius' good books is to tell him about this! The two pairs
-                    land up at the same time in a forest.
-                </p>
+                <a role="button" class="collapsed" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                </a>
             </div>
 
         </div>
